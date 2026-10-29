@@ -1,0 +1,14 @@
+name: Task
+description: Technical work with no direct user change
+type: Task
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What and why
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when

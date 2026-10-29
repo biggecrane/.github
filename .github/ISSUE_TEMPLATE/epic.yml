@@ -1,0 +1,16 @@
+name: Epic
+description: A body of work with a business outcome
+type: Epic
+body:
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Outcome
+      description: The business result, in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: measure
+    attributes:
+      label: Success measure
+      description: The number or fact that shows it worked.

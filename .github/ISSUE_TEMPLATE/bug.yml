@@ -1,0 +1,35 @@
+name: Bug
+description: Something works wrong outside production
+type: Bug
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs actual
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options: [DEV, UAT, Staging, Other]
+    validations:
+      required: true
+  - type: input
+    id: environment_detail
+    attributes:
+      label: Environment detail
+      description: Optional. Build, URL, device, or browser.
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who it affects and how often.
+    validations:
+      required: true

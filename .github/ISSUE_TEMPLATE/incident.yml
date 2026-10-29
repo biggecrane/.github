@@ -1,0 +1,21 @@
+name: Production incident
+description: Something is broken in production
+type: Bug
+body:
+  - type: markdown
+    attributes:
+      value: The lead sets Severity, adds prod-defect (code defect) or support (data fix, user error, ops request), and adds unplanned if it enters the current sprint.
+  - type: textarea
+    id: broken
+    attributes:
+      label: What is broken
+      description: Steps to reproduce, or what the user saw.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who is affected, how many, and since when.
+    validations:
+      required: true
